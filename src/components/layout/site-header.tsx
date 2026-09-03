@@ -30,7 +30,7 @@ export function SiteHeader() {
     <header
       className={cn(
         "sticky top-0 z-50 transition-colors duration-300",
-        scrolled ? "border-b border-border bg-background/85 backdrop-blur-md" : "bg-transparent",
+        scrolled ? "border-b border-border bg-background/92 backdrop-blur-md" : "bg-background",
       )}
     >
       <Container className="flex h-20 items-center justify-between gap-6 md:h-24">

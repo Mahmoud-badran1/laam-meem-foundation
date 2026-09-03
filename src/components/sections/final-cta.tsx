@@ -22,7 +22,7 @@ export function FinalCta() {
 
           <Reveal delay={120} className="lg:col-span-4">
             <div className="flex flex-col items-start gap-5">
-              <Button asChild variant="clay" size="xl">
+              <Button asChild variant="carbon" size="xl">
                 <Link to={primaryCta.to}>{primaryCta.label}</Link>
               </Button>
               <a

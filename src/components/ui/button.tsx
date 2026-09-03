@@ -17,8 +17,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         /* Laam Meem editorial variants */
-        ink: "rounded-none bg-primary text-primary-foreground uppercase tracking-[0.14em] text-xs font-semibold hover:bg-clay hover:text-clay-foreground",
-        clay: "rounded-none bg-clay text-clay-foreground uppercase tracking-[0.14em] text-xs font-semibold hover:bg-primary hover:text-primary-foreground",
+        ink: "rounded-none bg-primary text-primary-foreground uppercase tracking-[0.14em] text-xs font-semibold hover:bg-soft-white hover:text-carbon",
+        clay: "rounded-none bg-clay text-clay-foreground uppercase tracking-[0.14em] text-xs font-semibold hover:bg-soft-white hover:text-carbon",
+        carbon:
+          "rounded-none bg-carbon text-soft-white uppercase tracking-[0.14em] text-xs font-semibold hover:bg-soft-white hover:text-carbon",
         quiet:
           "rounded-none border border-border bg-transparent text-foreground uppercase tracking-[0.14em] text-xs font-semibold hover:border-foreground",
       },
@@ -29,7 +31,6 @@ const buttonVariants = cva(
         xl: "h-13 px-8 py-4",
         icon: "h-9 w-9",
       },
-
     },
     defaultVariants: {
       variant: "default",

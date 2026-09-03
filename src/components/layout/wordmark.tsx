@@ -6,7 +6,7 @@ import logoLight from "@/assets/laam-meem-logo-light.png";
 
 export function Wordmark({
   className,
-  variant = "black",
+  variant = "light",
 }: {
   className?: string;
   variant?: "black" | "light";
@@ -15,10 +15,7 @@ export function Wordmark({
     <Link
       to="/"
       aria-label={`${brand.name} — home`}
-      className={cn(
-        "inline-flex shrink-0 transition-opacity hover:opacity-70",
-        className,
-      )}
+      className={cn("inline-flex shrink-0 transition-opacity hover:opacity-70", className)}
     >
       <img
         src={variant === "light" ? logoLight : logoBlack}
