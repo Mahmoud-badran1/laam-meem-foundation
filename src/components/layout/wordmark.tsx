@@ -1,22 +1,32 @@
 import { Link } from "@tanstack/react-router";
 import { brand } from "@/content/site";
 import { cn } from "@/lib/utils";
+import logoBlack from "@/assets/laam-meem-logo-black.png";
+import logoLight from "@/assets/laam-meem-logo-light.png";
 
-/** Typographic wordmark. Swap for an SVG logo here when one exists. */
-export function Wordmark({ className }: { className?: string }) {
+export function Wordmark({
+  className,
+  variant = "black",
+}: {
+  className?: string;
+  variant?: "black" | "light";
+}) {
   return (
     <Link
       to="/"
       aria-label={`${brand.name} — home`}
       className={cn(
-        "group inline-flex items-baseline gap-2 text-foreground transition-opacity hover:opacity-70",
+        "inline-flex shrink-0 transition-opacity hover:opacity-70",
         className,
       )}
     >
-      <span className="display text-2xl leading-none tracking-[-0.01em] md:text-[1.75rem]">
-        {brand.name}
-      </span>
-      <span aria-hidden="true" className="hidden h-1.5 w-1.5 bg-clay sm:block" />
+      <img
+        src={variant === "light" ? logoLight : logoBlack}
+        alt={brand.name}
+        className="h-auto w-36 md:w-44"
+        width="1328"
+        height="376"
+      />
     </Link>
   );
 }

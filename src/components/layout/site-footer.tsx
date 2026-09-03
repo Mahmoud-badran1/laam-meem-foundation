@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
 import { Container } from "./container";
+import { Wordmark } from "./wordmark";
 import { brand, contact, legalLinks, navigation, socials } from "@/content/site";
 
 export function SiteFooter() {
@@ -11,7 +12,7 @@ export function SiteFooter() {
       <Container className="py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <p className="display text-3xl md:text-4xl">{brand.name}</p>
+            <Wordmark className="w-fit" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               {brand.tagline}
             </p>
