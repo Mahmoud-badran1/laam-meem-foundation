@@ -56,7 +56,7 @@ export function Hero() {
               />
               <span
                 aria-hidden="true"
-                className="absolute -bottom-4 -start-4 hidden h-24 w-24 border border-clay md:block"
+                className="absolute -bottom-5 -end-5 hidden h-28 w-28 border border-clay md:block"
               />
             </Reveal>
           </div>
