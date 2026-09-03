@@ -61,6 +61,7 @@ function ProjectCard({ project, feature }: { project: Project; feature?: boolean
 
 export function FeaturedWork() {
   const [feature, ...rest] = featuredProjects;
+  if (!feature) return null;
 
   return (
     <Section id="work" width="wide" className="bg-secondary/40" aria-labelledby="work-title">
