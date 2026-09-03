@@ -36,13 +36,14 @@ function ContactPage() {
   // Placeholder handler: wire this to a backend (or an email service) later.
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setSubmitting(true);
     setTimeout(() => {
       setSubmitting(false);
       toast.success("Thanks — this form is a placeholder", {
         description: `Connect it to a backend, or email ${contact.email} in the meantime.`,
       });
-      event.currentTarget?.reset?.();
+      form.reset();
     }, 500);
   }
 

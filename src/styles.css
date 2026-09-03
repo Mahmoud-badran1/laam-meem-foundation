@@ -167,7 +167,7 @@
     width: 100%;
     background-color: currentColor;
     transform: scaleX(0);
-    transform-origin: inline-start;
+    transform-origin: 0 50%;
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
   }
   &:hover::after,

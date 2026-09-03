@@ -9,9 +9,10 @@ export function TrustStrip() {
         <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {trustSignals.map((signal, i) => (
             <Reveal key={signal.label} delay={i * 80} className="text-start">
-              <dt className="eyebrow order-2">{signal.label}</dt>
-              <dd className="display mb-2 text-4xl md:text-5xl">{signal.value}</dd>
+              <dd className="display text-4xl md:text-5xl">{signal.value}</dd>
+              <dt className="eyebrow mt-3">{signal.label}</dt>
             </Reveal>
+
           ))}
         </dl>
       </Container>
