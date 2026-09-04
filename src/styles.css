@@ -199,6 +199,65 @@
   transform: none;
 }
 
+/* Aurora Signal — nature-inspired, but art-directed as visibility, momentum and communication. */
+.aurora-hero {
+  background-color: var(--carbon);
+}
+
+.aurora-hero__signal {
+  background-image:
+    radial-gradient(ellipse at 78% 10%, rgb(200 255 0 / 42%) 0%, rgb(200 255 0 / 16%) 22%, transparent 48%),
+    radial-gradient(ellipse at 92% 45%, rgb(108 255 179 / 22%) 0%, transparent 42%),
+    radial-gradient(ellipse at 58% 28%, rgb(200 255 0 / 18%) 0%, transparent 34%),
+    linear-gradient(122deg, transparent 36%, rgb(200 255 0 / 9%) 48%, rgb(200 255 0 / 25%) 54%, transparent 65%),
+    linear-gradient(154deg, #090a0a 8%, #0d1712 42%, #090a0a 78%);
+  background-size: 120% 120%, 125% 125%, 120% 120%, 145% 145%, 100% 100%;
+  filter: saturate(1.08) contrast(1.05);
+  transform: scale(1.04);
+  animation: aurora-drift 18s ease-in-out infinite alternate;
+}
+
+.aurora-hero__signal::before,
+.aurora-hero__signal::after {
+  content: "";
+  position: absolute;
+  inset: -12% -8%;
+  pointer-events: none;
+}
+
+.aurora-hero__signal::before {
+  background:
+    conic-gradient(from 202deg at 76% 26%, transparent 0 12%, rgb(200 255 0 / 15%) 18%, transparent 28% 100%);
+  filter: blur(22px);
+  opacity: 0.9;
+}
+
+.aurora-hero__signal::after {
+  background:
+    linear-gradient(105deg, transparent 42%, rgb(200 255 0 / 10%) 50%, transparent 58%),
+    radial-gradient(ellipse at 86% 38%, rgb(244 244 244 / 10%) 0%, transparent 30%);
+  mix-blend-mode: screen;
+  filter: blur(8px);
+}
+
+.aurora-hero__grid {
+  background-image:
+    linear-gradient(rgb(244 244 244 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(244 244 244 / 4%) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to right, transparent 0%, black 32%, black 100%);
+  opacity: 0.34;
+}
+
+@keyframes aurora-drift {
+  0% {
+    background-position: 50% 42%, 50% 50%, 50% 50%, 45% 50%, 50% 50%;
+  }
+  100% {
+    background-position: 55% 48%, 46% 52%, 58% 44%, 56% 46%, 50% 50%;
+  }
+}
+
 @keyframes promo-marquee {
   from {
     transform: translateX(0);
