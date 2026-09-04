@@ -16,9 +16,9 @@ type SectionProps = {
 };
 
 const spacings = {
-  tight: "py-14 md:py-20",
-  default: "py-20 md:py-28 lg:py-36",
-  loose: "py-28 md:py-40 lg:py-48",
+  tight: "py-16 md:py-24 lg:py-28",
+  default: "py-24 md:py-36 lg:py-44",
+  loose: "py-32 md:py-44 lg:py-56",
 } as const;
 
 export function Section({
@@ -32,7 +32,7 @@ export function Section({
 }: SectionProps) {
   return (
     <section id={id} className={cn(spacings[spacing], className)} {...rest}>
-      <Container width={width} className={cn(divided && "hairline pt-16 md:pt-24")}>
+      <Container width={width} className={cn(divided && "hairline pt-20 md:pt-28")}>
         {children}
       </Container>
     </section>
@@ -58,12 +58,12 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <Reveal className={cn("max-w-3xl", align === "center" && "mx-auto text-center", className)}>
-      {eyebrow ? <p className="eyebrow mb-5">{eyebrow}</p> : null}
+      {eyebrow ? <p className="eyebrow mb-7">{eyebrow}</p> : null}
       <h2 id={id} className="display text-balance text-4xl md:text-5xl lg:text-6xl">
         {title}
       </h2>
       {intro ? (
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+        <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
           {intro}
         </p>
       ) : null}
