@@ -7,7 +7,7 @@ import work03 from "@/assets/work-03.jpg";
 export const hero = {
   eyebrow: "Marketing agency — Vienna, Austria",
   headline: ["Your business is professional.", "Your presence should prove it."],
-  body: "Laam Meem helps businesses build a stronger social media presence, cover events at a premium standard, create content people remember and turn marketing into growth.",
+  body: "We help businesses build a professional, memorable presence that earns trust, attracts the right clients, and turns marketing into growth.",
   microcopy: "30 minutes · No obligation · We review your current presence before the call",
   image: {
     src: heroImage,
