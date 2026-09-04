@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: `${brand.name} — Creative Studio` },
+      { title: `${brand.name} — Marketing Agency` },
       { name: "description", content: brand.description },
       { property: "og:site_name", content: brand.name },
       { property: "og:type", content: "website" },
@@ -132,8 +132,8 @@ function RootComponent() {
         Skip to content
       </a>
       <ValueBar />
-      <PromoMarquee />
       <SiteHeader />
+      <PromoMarquee />
       <main id="main">
         <Outlet />
       </main>
