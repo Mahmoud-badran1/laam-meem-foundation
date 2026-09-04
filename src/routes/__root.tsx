@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { PromoMarquee } from "@/components/layout/promo-marquee";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Toaster } from "@/components/ui/sonner";
@@ -105,8 +106,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
-  // Locale is fixed to the default for now; see src/lib/i18n.ts for the
-  // multilingual (en / ar / de) roadmap — dir flips here.
   return (
     <html lang={defaultLocale} dir={getDirection(defaultLocale)}>
       <head>
@@ -131,9 +130,9 @@ function RootComponent() {
       >
         Skip to content
       </a>
+      <PromoMarquee />
       <SiteHeader />
       <main id="main">
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
       </main>
       <SiteFooter />
