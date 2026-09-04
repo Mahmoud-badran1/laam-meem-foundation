@@ -44,6 +44,9 @@ export function Hero() {
                   <Link to={secondaryCta.to}>{secondaryCta.label}</Link>
                 </Button>
               </div>
+              <p className="mt-4 text-xs uppercase tracking-[0.12em] text-muted-foreground">
+                {hero.microcopy}
+              </p>
             </Reveal>
           </div>
 
