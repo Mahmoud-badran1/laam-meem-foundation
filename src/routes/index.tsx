@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "@/components/sections/hero";
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { Transformation } from "@/components/sections/transformation";
+import { AuthorityProof } from "@/components/sections/authority-proof";
 import { FreeMarketingReview } from "@/components/sections/free-marketing-review";
 import { ServicesList } from "@/components/sections/services-list";
 import { FeaturedWork } from "@/components/sections/featured-work";
@@ -35,6 +36,7 @@ function HomePage() {
       <Hero />
       <TrustStrip />
       <Transformation />
+      <AuthorityProof />
       <FreeMarketingReview />
       <ServicesList />
       <FeaturedWork />
