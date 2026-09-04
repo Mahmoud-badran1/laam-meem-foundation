@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { ValueBar } from "@/components/layout/value-bar";
 import { PromoMarquee } from "@/components/layout/promo-marquee";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -130,6 +131,7 @@ function RootComponent() {
       >
         Skip to content
       </a>
+      <ValueBar />
       <PromoMarquee />
       <SiteHeader />
       <main id="main">
