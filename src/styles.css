@@ -74,7 +74,6 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
 
-  /* Brand extensions */
   --color-ink: var(--ink);
   --color-bone: var(--bone);
   --color-sand: var(--sand);
@@ -148,7 +147,6 @@
   }
 }
 
-/* Editorial display type */
 @utility display {
   font-family: var(--font-display);
   font-weight: 600;
@@ -156,7 +154,6 @@
   line-height: 0.94;
 }
 
-/* Small caps-style eyebrow label */
 @utility eyebrow {
   font-size: 0.6875rem;
   font-weight: 600;
@@ -165,12 +162,10 @@
   color: var(--color-muted-foreground);
 }
 
-/* Thin hairline rule used between editorial blocks */
 @utility hairline {
   border-top: 1px solid var(--color-border);
 }
 
-/* Underline that draws in from the inline-start edge (RTL aware) */
 @utility link-underline {
   position: relative;
   &::after {
@@ -191,7 +186,6 @@
   }
 }
 
-/* Scroll reveal — see components/ui/reveal.tsx */
 @utility reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -203,6 +197,24 @@
 @utility reveal-in {
   opacity: 1;
   transform: none;
+}
+
+@keyframes promo-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.promo-marquee {
+  animation: promo-marquee 22s linear infinite;
+  will-change: transform;
+}
+
+.promo-marquee:hover {
+  animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {
