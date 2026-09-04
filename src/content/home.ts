@@ -8,6 +8,7 @@ export const hero = {
   eyebrow: "Marketing agency — Vienna, Austria",
   headline: ["Your business is professional.", "Your presence should prove it."],
   body: "Laam Meem helps businesses build a stronger social media presence, cover events at a premium standard, create content people remember and turn marketing into growth.",
+  microcopy: "30 minutes · No obligation · We review your current presence before the call",
   image: {
     src: heroImage,
     alt: "Laam Meem creative direction and content production",
@@ -42,9 +43,23 @@ export const transformation = {
   ],
 } as const;
 
+export const freeMarketingReview = {
+  eyebrow: "Free 30-minute marketing review",
+  title: "Find the gaps that are making your business look smaller than it is.",
+  body:
+    "Before we talk about working together, we review your current presence and show you what we would improve first. You leave the call with useful direction whether you hire us or not.",
+  points: [
+    "Review your current online and social-media presence",
+    "Identify the three biggest gaps hurting perception or growth",
+    "Show where your content strategy is unclear or inconsistent",
+    "Prioritise the highest-value improvements to make next",
+    "Explain what we would do first if we were managing your marketing",
+  ],
+} as const;
+
 export const about = {
   eyebrow: "Why Laam Meem",
-  title: "One partner. One direction. One standard.",
+  title: "Most agencies start with content. We start with the business.",
   paragraphs: [
     "We combine marketing strategy, creative direction and production execution in one team. That means the idea, the content and the way it reaches your audience are designed to work together — not handed from supplier to supplier.",
     "Our approach starts before the camera turns on. We ask what people should think, feel and remember about your business, then build the system that makes that perception consistent across social media, campaigns, events and digital touchpoints.",
@@ -52,6 +67,7 @@ export const about = {
   points: [
     "Strategy before posting",
     "Premium production without losing commercial purpose",
+    "One coordinated partner instead of scattered suppliers",
     "Clear systems that make marketing consistent and measurable",
   ],
   image: {
@@ -139,7 +155,7 @@ export const featuredProjects: Project[] = [
     year: "Case study",
     disciplines: ["Strategy", "Social Media", "Content"],
     excerpt:
-      "A complete social-media direction built around clearer positioning, stronger visuals and a repeatable content system.",
+      "Problem: inconsistent presentation and no clear content direction. What changed: positioning, visual standards and a repeatable social-media system. Result: a more credible, consistent presence built to support growth.",
     image: { src: work01, alt: "Social media content direction", width: 1200, height: 900 },
   },
   {
@@ -149,7 +165,7 @@ export const featuredProjects: Project[] = [
     year: "Case study",
     disciplines: ["Event Coverage", "Video", "Photography"],
     excerpt:
-      "A social-first event coverage system combining live moments, highlight assets and post-event storytelling.",
+      "Problem: one-off event visibility. What changed: a social-first coverage plan combining live moments, highlights and reusable post-event assets. Result: content that extends the value of the event beyond the day itself.",
     image: { src: work02, alt: "Professional event coverage", width: 1200, height: 900 },
   },
   {
@@ -159,7 +175,7 @@ export const featuredProjects: Project[] = [
     year: "Case study",
     disciplines: ["Campaign", "Design", "Digital"],
     excerpt:
-      "A coordinated campaign presence spanning content, graphic design and digital assets without losing brand consistency.",
+      "Problem: disconnected materials across channels. What changed: one campaign direction across content, graphics and digital assets. Result: a more coherent and professional customer experience.",
     image: { src: work03, alt: "Integrated marketing campaign", width: 1200, height: 900 },
   },
 ];
@@ -190,6 +206,6 @@ export const processSteps = [
 export const testimonials = [] as const;
 
 export const finalCta = {
-  title: "Your business should look as professional as it really is.",
-  body: "If your current presence does not reflect the quality of your business, that is where we begin.",
+  title: "Your business has already done the hard part: becoming good at what it does.",
+  body: "Now make sure people can see it. Book a free 30-minute marketing review and we will show you where your current presence is underselling your business.",
 } as const;
