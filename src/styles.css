@@ -209,7 +209,7 @@
 }
 
 .promo-marquee {
-  animation: promo-marquee 22s linear infinite;
+  animation: promo-marquee 40s linear infinite;
   will-change: transform;
 }
 
