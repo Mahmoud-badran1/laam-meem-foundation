@@ -37,8 +37,8 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "sticky top-8 z-[80] border-b border-carbon/10 bg-soft-white text-carbon transition-shadow duration-300",
-        scrolled && "shadow-[0_8px_30px_rgba(0,0,0,0.05)]",
+        "sticky top-8 z-[80] border-b border-soft-white/10 bg-carbon text-soft-white transition-shadow duration-300",
+        scrolled && "shadow-[0_8px_30px_rgba(0,0,0,0.22)]",
       )}
     >
       <Container
@@ -52,23 +52,23 @@ export function SiteHeader() {
             aria-expanded={open}
             aria-controls="site-menu"
             aria-label={open ? "Close navigation menu" : "Open navigation menu"}
-            className="inline-flex h-11 items-center gap-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon transition-opacity hover:opacity-55"
+            className="inline-flex h-11 items-center gap-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-soft-white transition-opacity hover:opacity-55"
           >
             {open ? <X className="size-5" aria-hidden="true" /> : <Menu className="size-5" aria-hidden="true" />}
             <span className="hidden sm:inline">{open ? "Close" : "Menu"}</span>
           </button>
         </div>
 
-        <Wordmark variant="black" className="justify-self-center" />
+        <Wordmark variant="light" className="justify-self-center" />
 
         <div className="flex items-center justify-self-end gap-4 md:gap-6">
-          <div className="hidden items-center gap-2 text-[11px] font-medium uppercase tracking-[0.1em] text-carbon/65 md:flex">
+          <div className="hidden items-center gap-2 text-[11px] font-medium uppercase tracking-[0.1em] text-soft-white/60 md:flex">
             <Globe2 className="size-4" aria-hidden="true" />
             <span>EN</span>
-            <span className="text-carbon/25">/</span>
+            <span className="text-soft-white/25">/</span>
             <span>Vienna</span>
           </div>
-          <Button asChild variant="carbon" size="lg" className="hidden sm:inline-flex">
+          <Button asChild variant="ink" size="lg" className="hidden sm:inline-flex">
             <Link to={primaryCta.to}>{primaryCta.label}</Link>
           </Button>
         </div>
@@ -77,7 +77,7 @@ export function SiteHeader() {
       <div
         id="site-menu"
         hidden={!open}
-        className="fixed inset-x-0 top-28 bottom-0 z-[70] overflow-y-auto border-t border-border bg-carbon text-soft-white md:top-32"
+        className="fixed inset-x-0 top-28 bottom-0 z-[70] overflow-y-auto border-t border-soft-white/10 bg-carbon text-soft-white md:top-32"
       >
         <Container
           width="wide"
