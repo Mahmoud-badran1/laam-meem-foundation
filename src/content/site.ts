@@ -25,7 +25,7 @@ export const navigation: NavItem[] = [
 ];
 
 export const primaryCta = {
-  label: "Start a project",
+  label: "Get your free marketing review",
   to: "/contact",
 } as const;
 
