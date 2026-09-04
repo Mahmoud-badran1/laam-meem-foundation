@@ -9,17 +9,21 @@ import { primaryCta, secondaryCta } from "@/content/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-8 pb-16 md:pt-12 md:pb-24">
-      <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-px bg-lime" />
-      <Container width="wide">
-        <div className="grid min-h-[72vh] items-end gap-12 lg:grid-cols-12 lg:gap-10">
-          <div className="lg:col-span-8">
+    <section className="aurora-hero relative isolate overflow-hidden border-b border-border">
+      <div aria-hidden="true" className="aurora-hero__signal absolute inset-0 -z-20" />
+      <div aria-hidden="true" className="aurora-hero__grid absolute inset-0 -z-10" />
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-carbon/95 via-carbon/62 to-carbon/28" />
+      <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-48 bg-gradient-to-t from-carbon to-transparent" />
+
+      <Container width="wide" className="relative flex min-h-[78svh] flex-col justify-between py-24 md:py-32 lg:py-40">
+        <div className="grid gap-16 lg:grid-cols-12 lg:gap-12">
+          <div className="lg:col-span-10 xl:col-span-9">
             <Reveal>
               <p className="eyebrow text-lime">{hero.eyebrow}</p>
             </Reveal>
 
             <Reveal delay={80}>
-              <h1 className="display mt-8 max-w-6xl text-[clamp(3.5rem,9.5vw,8.8rem)]">
+              <h1 className="display mt-10 max-w-6xl text-[clamp(3.7rem,9vw,9.5rem)] text-soft-white">
                 {hero.headline[0]}
                 <br />
                 <span className="text-lime">{hero.headline[1]}</span>
@@ -27,54 +31,43 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={160}>
-              <p className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+              <p className="mt-12 max-w-2xl text-lg leading-relaxed text-soft-white/72 md:text-xl lg:mt-14">
                 {hero.body}
               </p>
             </Reveal>
 
             <Reveal delay={240}>
-              <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center md:mt-12">
                 <Button asChild variant="ink" size="xl">
                   <Link to={primaryCta.to}>
                     {primaryCta.label}
                     <ArrowUpRight className="ml-2 size-4" aria-hidden="true" />
                   </Link>
                 </Button>
-                <Button asChild variant="quiet" size="xl">
+                <Button asChild variant="quiet" size="xl" className="border-soft-white/30 bg-carbon/20 backdrop-blur-sm">
                   <Link to={secondaryCta.to}>{secondaryCta.label}</Link>
                 </Button>
               </div>
-              <p className="mt-4 text-xs uppercase tracking-[0.12em] text-muted-foreground">
+              <p className="mt-5 text-[10px] font-medium uppercase tracking-[0.16em] text-soft-white/48 md:text-xs">
                 {hero.microcopy}
               </p>
             </Reveal>
           </div>
-
-          <Reveal delay={200} className="relative lg:col-span-4">
-            <div className="relative overflow-hidden border border-border">
-              <img
-                src={hero.image.src}
-                alt={hero.image.alt}
-                width={hero.image.width}
-                height={hero.image.height}
-                fetchPriority="high"
-                decoding="async"
-                className="aspect-[4/5] w-full object-cover grayscale"
-              />
-              <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-lime px-4 py-3 text-carbon">
-                <span className="text-xs font-semibold uppercase tracking-[0.14em]">Vienna / Austria</span>
-                <ArrowUpRight className="size-4" aria-hidden="true" />
-              </div>
-            </div>
-          </Reveal>
         </div>
 
-        <div className="hairline mt-12 flex items-center justify-between gap-3 pt-6 text-xs text-muted-foreground md:mt-16">
+        <div className="mt-24 grid gap-8 border-t border-soft-white/18 pt-7 text-xs uppercase tracking-[0.16em] text-soft-white/55 md:mt-32 md:grid-cols-3 md:items-end">
           <div className="flex items-center gap-3">
             <ArrowDown className="size-4" aria-hidden="true" />
-            <span className="tracking-[0.18em] uppercase">Explore</span>
+            <span>Explore Laam Meem</span>
           </div>
-          <span className="hidden tracking-[0.18em] uppercase md:inline">Strategy + Production + Execution</span>
+          <div>
+            <span className="block text-lime">01 / Strategy first</span>
+            <span className="mt-2 block normal-case tracking-normal text-soft-white/52">We define the business outcome before the content.</span>
+          </div>
+          <div>
+            <span className="block text-lime">02 / One standard</span>
+            <span className="mt-2 block normal-case tracking-normal text-soft-white/52">Strategy, production and execution under one direction.</span>
+          </div>
         </div>
       </Container>
     </section>
