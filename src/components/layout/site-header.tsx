@@ -29,7 +29,7 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 transition-colors duration-300",
+        "sticky top-8 z-50 transition-colors duration-300",
         scrolled ? "border-b border-border bg-background/92 backdrop-blur-md" : "bg-background",
       )}
     >
@@ -70,7 +70,7 @@ export function SiteHeader() {
       <div
         id="mobile-navigation"
         hidden={!open}
-        className="fixed inset-x-0 top-20 bottom-0 z-40 overflow-y-auto border-t border-border bg-background lg:hidden"
+        className="fixed inset-x-0 top-28 bottom-0 z-40 overflow-y-auto border-t border-border bg-background lg:hidden"
       >
         <Container className="flex flex-col gap-2 py-10">
           {navigation.map((item, i) => (
