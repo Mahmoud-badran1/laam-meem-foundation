@@ -2,16 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { Hero } from "@/components/sections/hero";
 import { TrustStrip } from "@/components/sections/trust-strip";
-import { AboutPhilosophy } from "@/components/sections/about-philosophy";
+import { Transformation } from "@/components/sections/transformation";
 import { ServicesList } from "@/components/sections/services-list";
 import { FeaturedWork } from "@/components/sections/featured-work";
+import { AboutPhilosophy } from "@/components/sections/about-philosophy";
 import { Process } from "@/components/sections/process";
-import { Testimonials } from "@/components/sections/testimonials";
 import { FinalCta } from "@/components/sections/final-cta";
 
-const title = "Laam Meem — Brand, Identity & Digital Studio";
+const title = "Laam Meem — Marketing Agency in Vienna | Social Media, Event Coverage & Growth";
 const description =
-  "Laam Meem is a creative studio building culturally intelligent brands: strategy, identity, digital experience and editorial direction.";
+  "Laam Meem is a Vienna-based marketing agency helping businesses improve their social media presence, cover events professionally, create premium content and grow through stronger marketing strategy and execution.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,11 +33,11 @@ function HomePage() {
     <>
       <Hero />
       <TrustStrip />
-      <AboutPhilosophy />
+      <Transformation />
       <ServicesList />
       <FeaturedWork />
+      <AboutPhilosophy />
       <Process />
-      <Testimonials />
       <FinalCta />
     </>
   );

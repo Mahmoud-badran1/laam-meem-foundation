@@ -4,17 +4,16 @@ import { trustSignals } from "@/content/home";
 
 export function TrustStrip() {
   return (
-    <section aria-label="Studio credentials" className="border-y border-border bg-secondary/40">
-      <Container width="wide" className="py-10 md:py-14">
-        <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
+    <section aria-label="Laam Meem capabilities" className="border-y border-border bg-secondary/40">
+      <Container width="wide" className="py-8 md:py-10">
+        <div className="grid grid-cols-2 gap-px bg-border md:grid-cols-4">
           {trustSignals.map((signal, i) => (
-            <Reveal key={signal.label} delay={i * 80} className="text-start">
-              <dd className="display text-4xl md:text-5xl">{signal.value}</dd>
-              <dt className="eyebrow mt-3">{signal.label}</dt>
+            <Reveal key={signal.label} delay={i * 60} className="bg-background p-5 md:p-7">
+              <span className="eyebrow text-lime">{signal.value}</span>
+              <p className="mt-3 text-sm font-medium uppercase tracking-[0.08em]">{signal.label}</p>
             </Reveal>
-
           ))}
-        </dl>
+        </div>
       </Container>
     </section>
   );
