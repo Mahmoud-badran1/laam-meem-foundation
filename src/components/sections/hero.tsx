@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
@@ -9,65 +9,65 @@ import { primaryCta, secondaryCta } from "@/content/site";
 
 export function Hero() {
   return (
-    <section className="aurora-hero relative isolate overflow-hidden border-b border-border">
-      <div aria-hidden="true" className="aurora-hero__signal absolute inset-0 -z-20" />
-      <div aria-hidden="true" className="aurora-hero__grid absolute inset-0 -z-10" />
-      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-carbon/95 via-carbon/62 to-carbon/28" />
-      <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-48 bg-gradient-to-t from-carbon to-transparent" />
+    <section className="relative isolate min-h-[72svh] overflow-hidden border-b border-border">
+      <img
+        src={hero.image.src}
+        alt=""
+        aria-hidden="true"
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 -z-30 h-full w-full object-cover object-center"
+      />
+      <div aria-hidden="true" className="aurora-hero__signal absolute inset-0 -z-20 mix-blend-screen opacity-85" />
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(9,10,10,0.94)_0%,rgba(9,10,10,0.76)_36%,rgba(9,10,10,0.28)_68%,rgba(9,10,10,0.12)_100%)]" />
+      <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-gradient-to-t from-carbon/85 to-transparent" />
 
-      <Container width="wide" className="relative flex min-h-[78svh] flex-col justify-between py-24 md:py-32 lg:py-40">
-        <div className="grid gap-16 lg:grid-cols-12 lg:gap-12">
-          <div className="lg:col-span-10 xl:col-span-9">
-            <Reveal>
-              <p className="eyebrow text-lime">{hero.eyebrow}</p>
-            </Reveal>
+      <Container width="wide" className="flex min-h-[72svh] items-center py-24 md:py-32 lg:py-36">
+        <div className="max-w-3xl">
+          <Reveal>
+            <p className="eyebrow text-lime">{hero.eyebrow}</p>
+          </Reveal>
 
-            <Reveal delay={80}>
-              <h1 className="display mt-10 max-w-6xl text-[clamp(3.7rem,9vw,9.5rem)] text-soft-white">
-                {hero.headline[0]}
-                <br />
-                <span className="text-lime">{hero.headline[1]}</span>
-              </h1>
-            </Reveal>
+          <Reveal delay={80}>
+            <h1 className="display mt-8 max-w-3xl text-balance text-[clamp(3.1rem,6.7vw,7.4rem)] text-soft-white">
+              {hero.headline[0]}
+              <br />
+              <span className="text-lime">{hero.headline[1]}</span>
+            </h1>
+          </Reveal>
 
-            <Reveal delay={160}>
-              <p className="mt-12 max-w-2xl text-lg leading-relaxed text-soft-white/72 md:text-xl lg:mt-14">
-                {hero.body}
-              </p>
-            </Reveal>
+          <Reveal delay={160}>
+            <p className="mt-8 max-w-xl text-base leading-relaxed text-soft-white/78 md:text-lg lg:text-xl">
+              {hero.body}
+            </p>
+          </Reveal>
 
-            <Reveal delay={240}>
-              <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center md:mt-12">
-                <Button asChild variant="ink" size="xl">
-                  <Link to={primaryCta.to}>
-                    {primaryCta.label}
-                    <ArrowUpRight className="ml-2 size-4" aria-hidden="true" />
-                  </Link>
-                </Button>
-                <Button asChild variant="quiet" size="xl" className="border-soft-white/30 bg-carbon/20 backdrop-blur-sm">
-                  <Link to={secondaryCta.to}>{secondaryCta.label}</Link>
-                </Button>
-              </div>
-              <p className="mt-5 text-[10px] font-medium uppercase tracking-[0.16em] text-soft-white/48 md:text-xs">
-                {hero.microcopy}
-              </p>
-            </Reveal>
-          </div>
-        </div>
+          <Reveal delay={240}>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Button asChild variant="ink" size="xl">
+                <Link to={primaryCta.to}>
+                  {primaryCta.label}
+                  <ArrowUpRight className="ml-2 size-4" aria-hidden="true" />
+                </Link>
+              </Button>
+              <Button asChild variant="quiet" size="xl" className="border-soft-white/45 bg-carbon/16 text-soft-white backdrop-blur-sm hover:bg-soft-white hover:text-carbon">
+                <Link to={secondaryCta.to}>{secondaryCta.label}</Link>
+              </Button>
+            </div>
+            <p className="mt-5 text-[10px] font-medium uppercase tracking-[0.16em] text-soft-white/55 md:text-xs">
+              {hero.microcopy}
+            </p>
+          </Reveal>
 
-        <div className="mt-24 grid gap-8 border-t border-soft-white/18 pt-7 text-xs uppercase tracking-[0.16em] text-soft-white/55 md:mt-32 md:grid-cols-3 md:items-end">
-          <div className="flex items-center gap-3">
-            <ArrowDown className="size-4" aria-hidden="true" />
-            <span>Explore Laam Meem</span>
-          </div>
-          <div>
-            <span className="block text-lime">01 / Strategy first</span>
-            <span className="mt-2 block normal-case tracking-normal text-soft-white/52">We define the business outcome before the content.</span>
-          </div>
-          <div>
-            <span className="block text-lime">02 / One standard</span>
-            <span className="mt-2 block normal-case tracking-normal text-soft-white/52">Strategy, production and execution under one direction.</span>
-          </div>
+          <Reveal delay={320}>
+            <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-soft-white/20 pt-5 text-[10px] font-semibold uppercase tracking-[0.16em] text-soft-white/65 md:text-[11px]">
+              <span>Strategy first</span>
+              <span className="text-lime">•</span>
+              <span>Premium production</span>
+              <span className="text-lime">•</span>
+              <span>One partner</span>
+            </div>
+          </Reveal>
         </div>
       </Container>
     </section>
