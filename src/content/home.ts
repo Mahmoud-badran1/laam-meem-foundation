@@ -5,74 +5,75 @@ import work02 from "@/assets/work-02.jpg";
 import work03 from "@/assets/work-03.jpg";
 
 export const hero = {
-  eyebrow: "Marketing agency — Vienna, Austria",
-  headline: ["Your business is professional.", "Your presence should prove it."],
-  body: "We help businesses build a professional, memorable presence that earns trust, attracts the right clients, and turns marketing into growth.",
-  microcopy: "30 minutes · No obligation · We review your current presence before the call",
+  eyebrow: "Creative Growth Agency — Vienna",
+  headline: ["Your work deserves", "a stronger presence."],
+  body:
+    "Strategy, content and production for ambitious brands ready to be seen differently — and chosen with more confidence.",
+  microcopy: "Brand · Content · Social · Production",
   image: {
     src: heroImage,
-    alt: "Laam Meem creative direction and content production",
+    alt: "Cinematic creative direction for Laam Meem",
     width: 1280,
     height: 1600,
   },
 } as const;
 
 export const trustSignals = [
-  { value: "01", label: "Strategy" },
-  { value: "02", label: "Content" },
-  { value: "03", label: "Events" },
+  { value: "01", label: "Perception" },
+  { value: "02", label: "Attention" },
+  { value: "03", label: "Trust" },
   { value: "04", label: "Growth" },
 ] as const;
 
 export const transformation = {
-  eyebrow: "The gap we solve",
-  title: "Great businesses lose trust when their marketing looks improvised.",
+  eyebrow: "The problem",
+  title: "Good work does not automatically become a strong brand.",
   intro:
-    "Being visible is not the same as being positioned. Posting more is not the same as building a brand. We create the strategy, standard and execution that make every touchpoint feel intentional.",
+    "People cannot see the years of experience, the care behind the service or the quality of the work before they buy. They see the brand first. We close the gap between what your business is worth and how the market perceives it.",
   problems: [
-    "Inconsistent posting with no clear direction",
-    "Strong business, weak visual presentation",
-    "Events that happen once and disappear online",
-    "Content that follows trends but builds no long-term brand equity",
+    "A strong business with a weaker digital impression",
+    "Content without a clear position or recognizable point of view",
+    "Inconsistent visuals that make the brand feel smaller than it is",
+    "Marketing activity that creates noise but not preference",
   ],
   outcomes: [
-    "A clear and credible market position",
-    "A professional, recognisable social presence",
-    "Content systems designed around business goals",
-    "Event coverage that keeps creating value after the event ends",
+    "A brand that looks established, credible and desirable",
+    "A clearer position people can understand and remember",
+    "A consistent visual and content standard across touchpoints",
+    "A presence designed to earn attention, trust and choice",
   ],
 } as const;
 
 export const freeMarketingReview = {
-  eyebrow: "Free 30-minute marketing review",
-  title: "Find the gaps that are making your business look smaller than it is.",
+  eyebrow: "Free presence review",
+  title: "See your brand the way a potential client sees it.",
   body:
-    "Before we talk about working together, we review your current presence and show you what we would improve first. You leave the call with useful direction whether you hire us or not.",
+    "We review your current brand presence, identify where perception is falling behind the quality of your work, and show you the highest-value changes to make first.",
   points: [
-    "Review your current online and social-media presence",
-    "Identify the three biggest gaps hurting perception or growth",
-    "Show where your content strategy is unclear or inconsistent",
-    "Prioritise the highest-value improvements to make next",
-    "Explain what we would do first if we were managing your marketing",
+    "Review the first impression your brand creates",
+    "Identify the biggest perception and content gaps",
+    "Clarify what should feel more premium, credible or distinctive",
+    "Prioritise the changes most likely to improve trust and choice",
+    "Outline the first strategic move we would make",
   ],
 } as const;
 
 export const about = {
   eyebrow: "Why Laam Meem",
-  title: "Most agencies start with content. We start with the business.",
+  title: "We think before we create.",
   paragraphs: [
-    "We combine marketing strategy, creative direction and production execution in one team. That means the idea, the content and the way it reaches your audience are designed to work together — not handed from supplier to supplier.",
-    "Our approach starts before the camera turns on. We ask what people should think, feel and remember about your business, then build the system that makes that perception consistent across social media, campaigns, events and digital touchpoints.",
+    "Laam Meem works at the intersection of brand perception, content, growth and production. We do not begin with the question: what should we post this week? We begin with: what should people think, feel and remember about this brand?",
+    "From that answer, we build the strategy, concept, visual direction, production and distribution system that makes the outside of the business match the quality inside it.",
   ],
   points: [
-    "Strategy before posting",
-    "Premium production without losing commercial purpose",
-    "One coordinated partner instead of scattered suppliers",
-    "Clear systems that make marketing consistent and measurable",
+    "Perception before production",
+    "Strategy before content",
+    "Creative direction with commercial purpose",
+    "Organized creativity across every touchpoint",
   ],
   image: {
     src: aboutImage,
-    alt: "Laam Meem strategy and creative production process",
+    alt: "Laam Meem creative direction and production process",
     width: 1200,
     height: 1400,
   },
@@ -88,52 +89,36 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    id: "marketing-strategy",
+    id: "strategy",
     index: "01",
-    title: "Marketing strategy",
+    title: "Strategy",
     summary:
-      "We define the positioning, audience, messaging and campaign direction so your marketing has a reason behind every action.",
-    capabilities: ["Positioning", "Campaign strategy", "Audience direction", "Marketing planning"],
+      "We define how the brand should be perceived, who it needs to matter to and what message should guide every creative decision.",
+    capabilities: ["Brand strategy", "Content strategy", "Campaign strategy", "Growth strategy"],
   },
   {
-    id: "social-media",
+    id: "create",
     index: "02",
-    title: "Social media",
+    title: "Create",
     summary:
-      "A professional presence built around strategy, consistency and content that strengthens how people perceive your business.",
-    capabilities: ["Content strategy", "Planning", "Account direction", "Campaign support"],
+      "We turn the strategy into a visual and verbal world that feels distinctive, premium and recognisably yours.",
+    capabilities: ["Photography", "Videography", "Design", "Copywriting", "Creative direction"],
   },
   {
-    id: "content-production",
+    id: "manage",
     index: "03",
-    title: "Content production",
+    title: "Manage",
     summary:
-      "Photography, videography and reels designed for the platforms where your audience discovers and evaluates you.",
-    capabilities: ["Photography", "Videography", "Reels", "Creative direction"],
+      "We keep the brand coherent in motion — across content planning, social media, community and day-to-day execution.",
+    capabilities: ["Social media", "Content management", "Community", "Publishing systems"],
   },
   {
-    id: "event-coverage",
+    id: "grow",
     index: "04",
-    title: "Event coverage",
+    title: "Grow",
     summary:
-      "We turn your event into a bank of premium content — live moments, social-first assets, recaps and branded storytelling.",
-    capabilities: ["Photo coverage", "Video coverage", "Highlights", "Social-first content"],
-  },
-  {
-    id: "brand-identity",
-    index: "05",
-    title: "Branding & visual identity",
-    summary:
-      "Identity systems and graphic direction that make your business recognisable, coherent and ready to grow across channels.",
-    capabilities: ["Visual identity", "Graphic design", "Campaign design", "Print"],
-  },
-  {
-    id: "digital-presence",
-    index: "06",
-    title: "Web & landing pages",
-    summary:
-      "Focused digital experiences that carry the same professional standard from your social presence into conversion.",
-    capabilities: ["Websites", "Landing pages", "Campaign pages", "Digital design"],
+      "We connect the presence to business momentum through campaigns, optimisation, automation and performance thinking.",
+    capabilities: ["Campaigns", "Performance", "Automation", "Optimisation"],
   },
 ];
 
@@ -150,62 +135,68 @@ export type Project = {
 export const featuredProjects: Project[] = [
   {
     id: "social-transformation",
-    title: "From scattered posting to a professional brand presence",
+    title: "From scattered content to a brand people can recognise.",
     client: "Selected work",
-    year: "Case study",
-    disciplines: ["Strategy", "Social Media", "Content"],
+    year: "Brand presence",
+    disciplines: ["Strategy", "Social", "Content"],
     excerpt:
-      "Problem: inconsistent presentation and no clear content direction. What changed: positioning, visual standards and a repeatable social-media system. Result: a more credible, consistent presence built to support growth.",
-    image: { src: work01, alt: "Social media content direction", width: 1200, height: 900 },
+      "A clearer position, stronger visual discipline and a repeatable content system designed to make the business feel more established at first glance.",
+    image: { src: work01, alt: "Brand and social media transformation", width: 1200, height: 900 },
   },
   {
     id: "event-storytelling",
-    title: "An event designed to keep working after the room empties",
+    title: "Turning a live moment into lasting brand value.",
     client: "Selected work",
-    year: "Case study",
-    disciplines: ["Event Coverage", "Video", "Photography"],
+    year: "Production",
+    disciplines: ["Creative Direction", "Video", "Photography"],
     excerpt:
-      "Problem: one-off event visibility. What changed: a social-first coverage plan combining live moments, highlights and reusable post-event assets. Result: content that extends the value of the event beyond the day itself.",
-    image: { src: work02, alt: "Professional event coverage", width: 1200, height: 900 },
+      "Event coverage designed as brand storytelling — capturing the atmosphere, the people and the details in assets that continue working after the event.",
+    image: { src: work02, alt: "Cinematic event production", width: 1200, height: 900 },
   },
   {
     id: "campaign-presence",
-    title: "One campaign. One visual standard across every touchpoint.",
+    title: "One campaign language across every touchpoint.",
     client: "Selected work",
-    year: "Case study",
-    disciplines: ["Campaign", "Design", "Digital"],
+    year: "Campaign",
+    disciplines: ["Concept", "Design", "Digital"],
     excerpt:
-      "Problem: disconnected materials across channels. What changed: one campaign direction across content, graphics and digital assets. Result: a more coherent and professional customer experience.",
-    image: { src: work03, alt: "Integrated marketing campaign", width: 1200, height: 900 },
+      "A coordinated campaign direction connecting message, content and visual execution so every customer touchpoint reinforces the same perception.",
+    image: { src: work03, alt: "Integrated campaign creative direction", width: 1200, height: 900 },
   },
 ];
 
 export const processSteps = [
   {
     step: "01",
-    title: "Discover",
-    body: "We understand the business, audience, current presence and the gap between how you operate and how you are perceived.",
+    title: "Perception",
+    body: "We diagnose the gap between the quality of the business and the impression the market currently receives.",
   },
   {
     step: "02",
-    title: "Position",
-    body: "We define the message, creative direction and marketing priorities before deciding what content needs to be produced.",
+    title: "Strategy",
+    body: "We define the position, audience, message and commercial objective before creative work begins.",
   },
   {
     step: "03",
-    title: "Create",
-    body: "Strategy becomes photography, video, reels, campaigns, design and digital experiences built to one standard.",
+    title: "Concept",
+    body: "We translate the strategy into a clear creative idea, visual direction and content language.",
   },
   {
     step: "04",
-    title: "Grow",
-    body: "We refine what works, strengthen consistency and help your marketing compound rather than restart every month.",
+    title: "Production",
+    body: "We create the photography, video, design, copy and digital assets with one consistent standard.",
+  },
+  {
+    step: "05",
+    title: "Distribution",
+    body: "We put the work in front of the right people, learn from response and improve what comes next.",
   },
 ] as const;
 
 export const testimonials = [] as const;
 
 export const finalCta = {
-  title: "Your business has already done the hard part: becoming good at what it does.",
-  body: "Now make sure people can see it. Book a free 30-minute marketing review and we will show you where your current presence is underselling your business.",
+  title: "Be seen. Be remembered. Be chosen.",
+  body:
+    "If the quality of your presence is still behind the quality of your work, let us show you what should change first.",
 } as const;
