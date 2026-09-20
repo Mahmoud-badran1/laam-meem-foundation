@@ -9,7 +9,7 @@ export function TrustStrip() {
         <div className="grid items-center gap-6 md:grid-cols-[auto_1fr] md:gap-10">
           <Reveal>
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-carbon/55 md:text-[11px]">
-              Built around
+              Strong brands earn
             </p>
           </Reveal>
 
