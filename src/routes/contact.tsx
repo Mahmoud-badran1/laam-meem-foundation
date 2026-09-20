@@ -51,8 +51,8 @@ function ContactPage() {
     <>
       <PageHeader
         eyebrow="Free 30-minute marketing review"
-        title="See where your marketing is underselling your business."
-        intro="We review your current presence before the call, identify the biggest gaps and show you what we would improve first. No obligation and no pitch-first conversation."
+        title="See where your presence is underselling your potential."
+        intro="We review how your brand is currently perceived, identify the biggest gaps in trust, clarity and distinction, and show you what we would change first."
       />
 
       <Section width="wide" spacing="tight" divided>
@@ -117,12 +117,10 @@ function ContactPage() {
                   <option value="" disabled>
                     Select an area
                   </option>
-                  <option value="social-media">Social media</option>
-                  <option value="content-production">Content production</option>
-                  <option value="event-coverage">Event coverage</option>
-                  <option value="marketing-strategy">Marketing strategy</option>
-                  <option value="branding">Branding & visual identity</option>
-                  <option value="web">Website / landing page</option>
+                  <option value="strategy">Strategy</option>
+                  <option value="create">Create — content, design, photo or video</option>
+                  <option value="manage">Manage — social media & content</option>
+                  <option value="grow">Grow — campaigns, optimisation & automation</option>
                   <option value="multiple">Several areas / not sure yet</option>
                 </select>
               </div>
@@ -145,7 +143,7 @@ function ContactPage() {
                   id="success"
                   name="success"
                   rows={4}
-                  placeholder="For example: look more premium, generate better leads, improve event visibility, build a consistent content system…"
+                  placeholder="For example: look more established, become easier to trust, attract better-fit clients, build a more memorable brand…"
                   className="rounded-none"
                 />
               </div>
