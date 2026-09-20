@@ -1,6 +1,5 @@
 /**
  * Site-wide configuration and reusable content.
- * Keep brand details, navigation and contact information centralized here.
  */
 
 export type NavItem = {
@@ -10,27 +9,27 @@ export type NavItem = {
 
 export const brand = {
   name: "Laam Meem",
-  tagline: "Marketing that makes your business look as professional as it really is.",
+  tagline: "Be Seen. Be Remembered. Be Chosen.",
   description:
-    "Laam Meem is a Vienna-based marketing agency helping businesses strengthen their social media presence, cover events professionally, create memorable content and turn marketing into business growth.",
+    "Laam Meem is a Vienna-based creative growth agency helping ambitious brands turn strong businesses into recognizable, trusted brands through strategy, content, social media and production.",
   foundedLabel: "Vienna, Austria",
 } as const;
 
 export const navigation: NavItem[] = [
   { to: "/", label: "Home" },
-  { to: "/services", label: "Services" },
   { to: "/work", label: "Work" },
+  { to: "/services", label: "Services" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ];
 
 export const primaryCta = {
-  label: "Get your free marketing review",
+  label: "Build your presence",
   to: "/contact",
 } as const;
 
 export const secondaryCta = {
-  label: "See our work",
+  label: "View our work",
   to: "/work",
 } as const;
 
