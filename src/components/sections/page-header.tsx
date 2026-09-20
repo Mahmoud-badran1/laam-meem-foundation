@@ -10,10 +10,10 @@ type PageHeaderProps = {
 /** Shared editorial header for interior pages. */
 export function PageHeader({ eyebrow, title, intro }: PageHeaderProps) {
   return (
-    <Container width="wide" className="pt-12 pb-16 md:pt-20 md:pb-24">
+    <Container width="wide" className="pt-20 pb-24 md:pt-28 md:pb-36 lg:pt-36 lg:pb-44">
       <Reveal>
         <p className="eyebrow">{eyebrow}</p>
-        <h1 className="display mt-6 max-w-4xl text-balance text-[clamp(2.75rem,8vw,6rem)]">
+        <h1 className="display mt-6 max-w-4xl text-balance text-[clamp(3rem,7vw,7.5rem)] leading-[0.92]">
           {title}
         </h1>
       </Reveal>
