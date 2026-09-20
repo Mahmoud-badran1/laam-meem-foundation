@@ -7,7 +7,7 @@ import { FinalCta } from "@/components/sections/final-cta";
 
 const title = "Services — Laam Meem";
 const description =
-  "Brand strategy, identity design, digital experience and editorial content — modular engagements led by the people who do the work.";
+  "Explore Laam Meem services across Strategy, Create, Manage and Grow — one connected system for stronger brand perception and growth.";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -29,8 +29,8 @@ function ServicesPage() {
     <>
       <PageHeader
         eyebrow="Services"
-        title="Strategy, identity, digital, editorial."
-        intro="Start anywhere. Most engagements begin with a strategic phase and continue into design and build with the same team."
+        title="Strategy. Create. Manage. Grow."
+        intro="Four connected pillars designed to make the brand clearer, more credible, more memorable and easier to choose."
       />
       <ServicesList />
       <Process />
