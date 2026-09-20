@@ -7,7 +7,7 @@ import { FinalCta } from "@/components/sections/final-cta";
 
 const title = "Work — Laam Meem";
 const description =
-  "Selected projects in brand identity, editorial systems and digital experience for institutions and founders.";
+  "Selected Laam Meem work across brand strategy, content, social media, production and campaigns.";
 
 export const Route = createFileRoute("/work")({
   head: () => ({
@@ -29,8 +29,8 @@ function WorkPage() {
     <>
       <PageHeader
         eyebrow="Selected work"
-        title="Fewer projects, followed further."
-        intro="A sample of recent engagements. Case studies with full detail are available on request."
+        title="Work designed to change perception."
+        intro="Selected transformations across strategy, content and production. We focus on the thinking behind the work as much as the finished output."
       />
       <FeaturedWork />
       <Testimonials />
