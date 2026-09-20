@@ -9,7 +9,7 @@ import { TrustStrip } from "@/components/sections/trust-strip";
 
 const title = "About — Laam Meem";
 const description =
-  "A small, senior studio working at the intersection of strategy, typography and culture. Meet the thinking behind Laam Meem.";
+  "Meet the thinking behind Laam Meem — a Vienna-based creative growth agency working across brand perception, strategy, content and production.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -31,8 +31,8 @@ function AboutPage() {
     <>
       <PageHeader
         eyebrow="About"
-        title="We build brands that can be argued for."
-        intro="Laam Meem is a studio of strategists, designers and writers. We work in English, Arabic and German, and we care about what a brand means before we decide how it looks."
+        title="We shape how strong businesses are seen."
+        intro="We are a creative growth agency built around one belief: the outside of a business should match the quality inside it. We think about perception before production, and strategy before content."
       />
       <TrustStrip />
       <AboutPhilosophy />
