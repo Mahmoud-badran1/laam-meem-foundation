@@ -50,8 +50,8 @@
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
 
-  --font-display: "General Sans", "Helvetica Neue", Arial, sans-serif;
-  --font-sans: "General Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Manrope", "General Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Inter", "General Sans", "Helvetica Neue", Arial, sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -90,27 +90,27 @@
 :root {
   --radius: 0.125rem;
 
-  --carbon: #090a0a;
-  --lime: #c8ff00;
-  --soft-white: #f4f4f4;
+  --carbon: #080808;
+  --lime: #c7ff20;
+  --soft-white: #ffffff;
   --ink: var(--soft-white);
   --bone: var(--carbon);
-  --sand: #111313;
+  --sand: #121212;
   --clay: var(--lime);
   --clay-foreground: var(--carbon);
 
   --background: var(--carbon);
   --foreground: var(--soft-white);
-  --card: #101111;
+  --card: #121212;
   --card-foreground: var(--soft-white);
-  --popover: #101111;
+  --popover: #121212;
   --popover-foreground: var(--soft-white);
   --primary: var(--lime);
   --primary-foreground: var(--carbon);
   --secondary: var(--sand);
   --secondary-foreground: var(--soft-white);
-  --muted: #171919;
-  --muted-foreground: #a7aaaa;
+  --muted: #242424;
+  --muted-foreground: #b8b8b8;
   --accent: var(--lime);
   --accent-foreground: var(--carbon);
   --destructive: #e5484d;
