@@ -1,37 +1,34 @@
 import { Link } from "@tanstack/react-router";
+import { ArrowUpRight } from "lucide-react";
 
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { finalCta } from "@/content/home";
-import { contact, primaryCta } from "@/content/site";
+import { primaryCta } from "@/content/site";
 
 export function FinalCta() {
   return (
-    <section aria-labelledby="cta-title" className="bg-primary text-primary-foreground">
-      <Container width="wide" className="py-24 md:py-32">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
-          <Reveal className="lg:col-span-8">
-            <h2 id="cta-title" className="display text-balance text-4xl md:text-6xl lg:text-7xl">
+    <section aria-labelledby="cta-title" className="border-t border-border bg-carbon text-soft-white">
+      <Container width="wide" className="py-28 md:py-40 lg:py-48">
+        <div className="grid gap-14 lg:grid-cols-12 lg:items-end">
+          <Reveal className="lg:col-span-9">
+            <p className="eyebrow text-lime">Laam Meem</p>
+            <h2 id="cta-title" className="display mt-8 max-w-6xl text-balance text-[clamp(3.4rem,8vw,9rem)] leading-[0.9]">
               {finalCta.title}
             </h2>
-            <p className="mt-6 max-w-lg text-base leading-relaxed opacity-70 md:text-lg">
+            <p className="mt-8 max-w-2xl text-base leading-relaxed text-soft-white/55 md:text-xl">
               {finalCta.body}
             </p>
           </Reveal>
 
-          <Reveal delay={120} className="lg:col-span-4">
-            <div className="flex flex-col items-start gap-5">
-              <Button asChild variant="carbon" size="xl">
-                <Link to={primaryCta.to}>{primaryCta.label}</Link>
-              </Button>
-              <a
-                href={`mailto:${contact.email}`}
-                className="link-underline text-sm opacity-70 transition-opacity hover:opacity-100"
-              >
-                {contact.email}
-              </a>
-            </div>
+          <Reveal delay={120} className="lg:col-span-3 lg:text-end">
+            <Button asChild variant="ink" size="xl">
+              <Link to={primaryCta.to}>
+                {primaryCta.label}
+                <ArrowUpRight className="ml-2 size-4" aria-hidden="true" />
+              </Link>
+            </Button>
           </Reveal>
         </div>
       </Container>
