@@ -9,21 +9,21 @@ import { primaryCta } from "@/content/site";
 
 export function FreeMarketingReview() {
   return (
-    <Section id="free-review" width="wide" aria-labelledby="free-review-title" className="bg-lime text-carbon">
-      <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 lg:items-end">
+    <Section id="free-review" width="wide" spacing="loose" aria-labelledby="free-review-title" className="bg-soft-white text-carbon">
+      <div className="grid gap-16 lg:grid-cols-12 lg:gap-20 lg:items-end">
         <Reveal className="lg:col-span-7">
-          <p className="eyebrow text-carbon/60">{freeMarketingReview.eyebrow}</p>
-          <h2 id="free-review-title" className="display mt-6 max-w-4xl text-balance text-4xl md:text-6xl lg:text-7xl">
+          <p className="eyebrow text-carbon/50">{freeMarketingReview.eyebrow}</p>
+          <h2 id="free-review-title" className="display mt-8 max-w-4xl text-balance text-[clamp(3rem,6vw,7rem)]">
             {freeMarketingReview.title}
           </h2>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-carbon/70 md:text-lg">
+          <p className="mt-8 max-w-2xl text-base leading-relaxed text-carbon/65 md:text-xl">
             {freeMarketingReview.body}
           </p>
         </Reveal>
 
         <Reveal delay={100} className="lg:col-span-5">
-          <div className="border border-carbon/20 bg-soft-white p-6 text-carbon md:p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.14em]">During the call, we will</p>
+          <div className="border-t border-carbon pt-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em]">What we review</p>
             <ul className="mt-6 space-y-4">
               {freeMarketingReview.points.map((point) => (
                 <li key={point} className="flex gap-3 border-t border-carbon/15 pt-4 text-sm leading-relaxed">
@@ -38,7 +38,7 @@ export function FreeMarketingReview() {
                 <ArrowUpRight className="ml-2 size-4" aria-hidden="true" />
               </Link>
             </Button>
-            <p className="mt-4 text-center text-xs uppercase tracking-[0.12em] text-carbon/55">
+            <p className="mt-4 text-center text-[10px] uppercase tracking-[0.14em] text-carbon/45">
               30 minutes · No obligation · Vienna & remote
             </p>
           </div>
