@@ -2,18 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { Hero } from "@/components/sections/hero";
 import { TrustStrip } from "@/components/sections/trust-strip";
-import { Transformation } from "@/components/sections/transformation";
-import { AuthorityProof } from "@/components/sections/authority-proof";
-import { FreeMarketingReview } from "@/components/sections/free-marketing-review";
-import { ServicesList } from "@/components/sections/services-list";
 import { FeaturedWork } from "@/components/sections/featured-work";
-import { AboutPhilosophy } from "@/components/sections/about-philosophy";
+import { Transformation } from "@/components/sections/transformation";
+import { ServicesList } from "@/components/sections/services-list";
 import { Process } from "@/components/sections/process";
+import { AuthorityProof } from "@/components/sections/authority-proof";
+import { AboutPhilosophy } from "@/components/sections/about-philosophy";
+import { FreeMarketingReview } from "@/components/sections/free-marketing-review";
 import { FinalCta } from "@/components/sections/final-cta";
 
-const title = "Laam Meem — Marketing Agency in Vienna | Social Media, Event Coverage & Growth";
+const title = "Laam Meem — Creative Growth Agency in Vienna";
 const description =
-  "Laam Meem is a Vienna-based marketing agency helping businesses improve their social media presence, cover events professionally, create premium content and grow through stronger marketing strategy and execution.";
+  "Laam Meem is a Vienna-based creative growth agency helping ambitious brands build stronger perception through strategy, content, social media and production.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,13 +35,13 @@ function HomePage() {
     <>
       <Hero />
       <TrustStrip />
-      <Transformation />
-      <AuthorityProof />
-      <FreeMarketingReview />
-      <ServicesList />
       <FeaturedWork />
-      <AboutPhilosophy />
+      <Transformation />
+      <ServicesList />
       <Process />
+      <AuthorityProof />
+      <AboutPhilosophy />
+      <FreeMarketingReview />
       <FinalCta />
     </>
   );
