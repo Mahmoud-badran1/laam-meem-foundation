@@ -5,7 +5,7 @@ const messages = [
   "Winter Sale — 30% Off on selected marketing packages",
   "Strategy before content. Business outcomes before vanity metrics.",
   "Premium creative execution built to strengthen trust and perception.",
-  "One marketing partner from positioning to production and growth.",
+  "30% Winter Sale",
 ] as const;
 
 export function ValueBar() {
