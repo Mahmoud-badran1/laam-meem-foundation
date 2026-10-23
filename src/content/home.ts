@@ -193,7 +193,27 @@ export const processSteps = [
   },
 ] as const;
 
-export const testimonials = [] as const;
+export type Testimonial = {
+  quote: string;
+  name: string;
+  role: string;
+};
+
+// Placeholder quotes — replace with real client words as soon as they are available.
+export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "The work finally looks like the standard of the business. Clients notice it before we explain what we do.",
+    name: "Client name",
+    role: "Role, Company",
+  },
+  {
+    quote:
+      "One partner for strategy, creative and production — with a level of direction we had not had before.",
+    name: "Client name",
+    role: "Role, Company",
+  },
+];
 
 export const finalCta = {
   title: "Be seen. Be remembered. Be chosen.",

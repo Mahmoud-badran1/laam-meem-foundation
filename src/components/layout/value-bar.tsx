@@ -21,7 +21,7 @@ export function ValueBar() {
 
   return (
     <div
-      className="sticky top-0 z-[90] border-b border-carbon/10 bg-soft-white text-carbon"
+      className="sticky top-0 z-[90] border-b border-soft-white/20 bg-red text-red-foreground"
       role="region"
       aria-label="Laam Meem promotion and agency strengths"
     >
