@@ -82,6 +82,8 @@
   --color-lime: var(--lime);
   --color-carbon: var(--carbon);
   --color-soft-white: var(--soft-white);
+  --color-red: var(--red);
+  --color-red-foreground: var(--red-foreground);
 
   --tracking-display: -0.02em;
   --tracking-label: 0.18em;
@@ -93,6 +95,8 @@
   --carbon: #080808;
   --lime: #c7ff20;
   --soft-white: #ffffff;
+  --red: #c8102e;
+  --red-foreground: var(--soft-white);
   --ink: var(--soft-white);
   --bone: var(--carbon);
   --sand: #121212;
