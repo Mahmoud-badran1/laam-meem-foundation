@@ -12,9 +12,9 @@ export const hero = {
   microcopy: "Brand · Content · Social · Production",
   image: {
     src: heroImage,
-    alt: "Cinematic creative direction for Laam Meem",
-    width: 1280,
-    height: 1600,
+    alt: "Storyteller operating a cinema camera in a dark studio",
+    width: 1200,
+    height: 1504,
   },
 } as const;
 
@@ -73,9 +73,9 @@ export const about = {
   ],
   image: {
     src: aboutImage,
-    alt: "Laam Meem creative direction and production process",
+    alt: "Laam Meem team reviewing storyboard frames and a video timeline",
     width: 1200,
-    height: 1400,
+    height: 1408,
   },
 } as const;
 
@@ -141,7 +141,7 @@ export const featuredProjects: Project[] = [
     disciplines: ["Strategy", "Social", "Content"],
     excerpt:
       "A clearer position, stronger visual discipline and a repeatable content system designed to make the business feel more established at first glance.",
-    image: { src: work01, alt: "Brand and social media transformation", width: 1200, height: 900 },
+    image: { src: work01, alt: "Creator filming a short-form vertical video in a studio", width: 1200, height: 912 },
   },
   {
     id: "event-storytelling",
@@ -151,7 +151,7 @@ export const featuredProjects: Project[] = [
     disciplines: ["Creative Direction", "Video", "Photography"],
     excerpt:
       "Event coverage designed as brand storytelling — capturing the atmosphere, the people and the details in assets that continue working after the event.",
-    image: { src: work02, alt: "Cinematic event production", width: 1200, height: 900 },
+    image: { src: work02, alt: "Videographer filming a live event from behind the camera", width: 1200, height: 912 },
   },
   {
     id: "campaign-presence",
@@ -161,7 +161,7 @@ export const featuredProjects: Project[] = [
     disciplines: ["Concept", "Design", "Digital"],
     excerpt:
       "A coordinated campaign direction connecting message, content and visual execution so every customer touchpoint reinforces the same perception.",
-    image: { src: work03, alt: "Integrated campaign creative direction", width: 1200, height: 900 },
+    image: { src: work03, alt: "Editor colour grading a story timeline in an editing suite", width: 1200, height: 912 },
   },
 ];
 
