@@ -34,15 +34,15 @@ export const secondaryCta = {
 } as const;
 
 export const contact = {
-  email: "hello@laammeem.example",
-  phone: "+43 000 000 0000",
+  email: "info@laam-meem.com",
+  phone: "+43 688 64629237",
   addressLines: ["Vienna", "Austria"],
   hours: "Mon – Fri, 09:00 – 18:00",
 } as const;
 
 export const socials = [
-  { label: "Instagram", href: "https://example.com/instagram" },
-  { label: "LinkedIn", href: "https://example.com/linkedin" },
+  { label: "Instagram", href: "https://www.instagram.com/laam__meem/" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/laam-meem-345558449/" },
 ] as const;
 
 export const legalLinks = [
