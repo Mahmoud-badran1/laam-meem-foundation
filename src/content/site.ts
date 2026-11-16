@@ -35,7 +35,6 @@ export const secondaryCta = {
 
 export const contact = {
   email: "info@laam-meem.com",
-  phone: "+43 688 64629237",
   addressLines: ["Vienna", "Austria"],
   hours: "Mon – Fri, 09:00 – 18:00",
 } as const;

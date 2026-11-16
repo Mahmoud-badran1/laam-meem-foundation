@@ -204,11 +204,6 @@ function ContactPage() {
                     {contact.email}
                   </a>
                 </p>
-                <p className="mt-2">
-                  <a href={`tel:${contact.phone.replace(/\s/g, "")}`} className="link-underline">
-                    {contact.phone}
-                  </a>
-                </p>
               </div>
 
               <div>

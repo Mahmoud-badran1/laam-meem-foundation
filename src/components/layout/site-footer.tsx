@@ -61,14 +61,6 @@ export function SiteFooter() {
                   {contact.email}
                 </a>
               </li>
-              <li>
-                <a
-                  href={`tel:${contact.phone.replace(/\s/g, "")}`}
-                  className="transition-colors hover:text-foreground"
-                >
-                  {contact.phone}
-                </a>
-              </li>
               {contact.addressLines.map((line) => (
                 <li key={line}>{line}</li>
               ))}
